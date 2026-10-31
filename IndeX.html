@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VIP Car Care – угаалга, керамик, тос солих</title>
+<meta name="description" content="VIP Car Care: машин угаалга, керамик өнгөлгөө, тос масло солих, шилний тэнь, стикер. Утас 8514 1166.">
+<style>
+:root{
+  --bg:#0b0b0d;--g1:rgba(200,16,46,.30);--g2:rgba(110,0,20,.32);--surface:#151518;--ink:#f4f1ee;--muted:#b3acaa;--line:#2b2b31;--accent:#c8102e;--accent-ink:#ffffff;--gold-text:#ff4d5e;--car:#e01b32;--carop:.28;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:radial-gradient(800px 420px at 100% -60px,var(--g1),transparent 70%),radial-gradient(700px 380px at 0 -40px,var(--g2),transparent 70%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding:20px 0 4px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-weight:900;font-size:19px;letter-spacing:-.01em}
+.logo{color:#fff}.logo span{color:var(--gold-text)}
+.call{color:var(--ink);text-decoration:none;font-weight:700;border:1.5px solid var(--line);padding:8px 14px;border-radius:999px;white-space:nowrap}
+h1{font-size:clamp(36px,10vw,60px);line-height:1;letter-spacing:-.035em;margin:36px 0 14px;font-weight:900}
+.lead{color:var(--muted);font-size:18px;max-width:30em;margin:0 0 24px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:700;border:0;padding:14px 24px;border-radius:10px;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+section{padding:52px 0 0}
+h2{font-size:26px;letter-spacing:-.02em;margin:0 0 6px}
+h3{font-size:17px;margin:28px 0 8px}
+.note{color:var(--muted);margin:0 0 16px;font-size:15px}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:15px}
+th,td{padding:12px 14px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;font-weight:700}
+th{color:var(--muted);font-weight:600;font-size:14px}
+tr:last-child td{border-bottom:0}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{display:flex;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.list .n{flex:1}
+.list small{display:block;color:var(--muted);font-size:14px}
+.list .p{font-weight:800;text-align:right}
+.list .p small{font-weight:500}
+form{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+label{display:grid;gap:6px;font-weight:600;font-size:15px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:12px;width:100%}
+.row{display:grid;gap:14px}
+@media (min-width:560px){.row{grid-template-columns:1fr 1fr}}
+#done{margin-top:16px;border:1.5px solid var(--accent);border-radius:14px;padding:20px;background:var(--surface)}
+#done pre{white-space:pre-wrap;font:inherit;margin:12px 0;background:var(--bg);padding:14px;border-radius:10px;border:1px solid var(--line)}
+label.opt{display:flex;align-items:center;gap:12px;font-weight:500;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.opt input{width:20px;height:20px;padding:0;border:0;flex:none;accent-color:var(--accent)}
+.opt input:disabled+span{color:var(--muted)}
+.opt b{white-space:nowrap}
+.total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 14px;font-weight:800;font-size:20px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+[hidden]{display:none!important}
+footer{padding:52px 0 40px;color:var(--muted);font-size:15px}
+footer p{margin:4px 0}
+footer b{color:var(--ink)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 2px;margin:28px 0 0;scrollbar-width:none}
+.chips a{flex:none;color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;border:1.5px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:999px}
+.facts{display:grid;gap:10px;margin-top:20px}
+@media (min-width:560px){.facts{grid-template-columns:repeat(3,1fr)}}
+.facts div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px}
+.facts b{display:block;font-size:16px;margin-bottom:2px}
+.facts span{color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{font-weight:700;cursor:pointer}
+details p{margin:8px 0 0;color:var(--muted)}
+.bar{display:none}
+@media (max-width:640px){
+  .bar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line)}
+  .bar .btn{flex:1;text-align:center;padding:12px 10px}
+  footer{padding-bottom:100px}
+}
+.back{display:inline-block;margin:6px 0 18px;color:var(--muted);text-decoration:none;font-weight:600}
+.tick{width:52px;height:52px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:28px;font-weight:700;margin-bottom:10px}
+.steps{list-style:none;margin:14px 0;padding:0;display:grid;gap:8px;color:var(--muted)}
+body.sub .bar{display:none!important}
+.wrap{position:relative}
+.wrap>header,.wrap>main,.wrap>footer{position:relative;z-index:1}
+.bgcar{position:absolute;left:0;right:0;top:70px;width:100%;height:auto;opacity:var(--carop);pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(to bottom,#000 65%,transparent);mask-image:linear-gradient(to bottom,#000 65%,transparent)}
+@media (min-width:700px){.bgcar{opacity:calc(var(--carop) + .1)}}
+h1{color:#fff}
+h2,h3,.list .p{color:var(--gold-text)}
+th{color:var(--gold-text)}
+/* ===== polish ===== */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+section{scroll-margin-top:12px}
+.btn{background:linear-gradient(135deg,#ec2a43,#a30c22);border-radius:12px;padding:14px 26px;letter-spacing:.01em;box-shadow:0 10px 24px -10px rgba(224,27,50,.75),inset 0 1px 0 rgba(255,255,255,.28);transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{filter:brightness(1.08);box-shadow:0 14px 30px -10px rgba(224,27,50,.9),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn:active{transform:scale(.97)}
+@media (prefers-reduced-motion:no-preference){.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0) scale(.97)}}
+.btn.ghost{background:rgba(255,255,255,.04);color:var(--ink);border:1.5px solid #3a3a42;box-shadow:none}
+.btn.ghost:hover{border-color:var(--accent);background:rgba(224,27,50,.12);box-shadow:none}
+.call{transition:border-color .15s,background .15s}
+.call:hover{border-color:var(--accent);background:rgba(224,27,50,.12)}
+.chips a{transition:border-color .15s,background .15s}
+.chips a:hover{border-color:var(--accent);background:rgba(224,27,50,.14)}
+h2::after{content:"";display:block;width:36px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--accent),transparent);margin-top:8px}
+.facts div{background:linear-gradient(180deg,rgba(224,27,50,.10),transparent 60%),var(--surface);border-top:2px solid var(--accent)}
+.facts b{color:#fff}
+.scroll,form{box-shadow:0 18px 40px -28px #000}
+th{text-transform:uppercase;letter-spacing:.06em;font-size:12px}
+tbody tr:hover{background:rgba(224,27,50,.07)}
+.list li{transition:background .15s}
+.list li:hover{background:rgba(224,27,50,.06)}
+#more .n::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:12px;vertical-align:middle;box-shadow:0 0 10px rgba(224,27,50,.8)}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(224,27,50,.28)}
+#ct{color:var(--gold-text);font-size:24px}
+summary{list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold-text);font-size:24px;line-height:1;flex:none}
+details[open] summary::after{content:"\2212"}
+.tick{box-shadow:0 0 0 6px rgba(224,27,50,.2),0 10px 28px -8px rgba(224,27,50,.8)}
+.bar{background:var(--surface)}
+.cer{border:1px solid rgba(224,27,50,.5);border-radius:18px;padding:22px 20px 20px;background:linear-gradient(155deg,rgba(224,27,50,.2),transparent 55%),var(--surface);box-shadow:0 22px 48px -28px rgba(224,27,50,.8)}
+.perks{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.perks li{font-weight:600;font-size:15px}
+.perks li::before{content:"\2713";color:var(--gold-text);font-weight:900;margin-right:8px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tier{background:rgba(0,0,0,.35);border:1px solid var(--line);border-radius:12px;padding:14px 8px;text-align:center}
+.tier span{display:block;color:var(--muted);font-size:13px;margin-bottom:4px}
+.tier b{display:block;color:#fff;font-size:clamp(16px,4.8vw,24px);letter-spacing:-.02em}
+/* ===== smooth effects ===== */
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+@keyframes viewIn{from{opacity:0;transform:translateY(14px)}}
+@keyframes pop{0%{transform:scale(.4);opacity:0}70%{transform:scale(1.14)}100%{transform:scale(1);opacity:1}}
+@keyframes drive{from{transform:translateX(80px);opacity:0}}
+@keyframes bump{40%{transform:scale(1.14)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}}
+*{-webkit-tap-highlight-color:transparent}
+button,a,select,label.opt,summary,.btn{touch-action:manipulation}
+label.opt{padding:16px 14px;user-select:none;-webkit-user-select:none}
+.opt input{width:22px;height:22px}
+.opt.on{background:rgba(224,27,50,.12)}
+.opt:active{background:rgba(224,27,50,.2)}
+#ct{display:inline-block}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1),background .15s}
+  .js .rv.in{opacity:1;transform:none}
+  .js h1,.js .lead,.js .btns,.js .chips,.js .facts{animation:up .8s cubic-bezier(.2,.7,.2,1) both}
+  .js h1{animation-delay:.05s}.js .lead{animation-delay:.15s}.js .btns{animation-delay:.25s}.js .chips{animation-delay:.35s}.js .facts{animation-delay:.45s}
+  #v-home:not([hidden]),#v-order:not([hidden]),#v-success:not([hidden]){animation:viewIn .5s cubic-bezier(.2,.7,.2,1)}
+  #v-success:not([hidden]) .tick{animation:pop .6s cubic-bezier(.2,.9,.3,1.2) .1s both}
+  .bgcar{animation:drive 1.5s cubic-bezier(.2,.8,.2,1) both}
+  details[open] p{animation:fadeIn .35s ease}
+}
+/* ===== luxury ===== */
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes spin{to{--a:360deg}}
+@keyframes glint{from{stroke-dashoffset:14}to{stroke-dashoffset:-86}}
+h1,h2,footer b{font-family:"Playfair Display",Georgia,"Times New Roman",serif}
+h1{font-weight:800;letter-spacing:-.02em;margin-top:10px;background:linear-gradient(180deg,#fff 25%,#a5a5b0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-weight:700;font-size:30px}
+.eyebrow{margin-top:40px;color:var(--gold-text);font-weight:700;font-size:12px;letter-spacing:.34em;text-transform:uppercase}
+.logo{font-size:15px;letter-spacing:.16em}
+.p,td,.tier b,#ct,.opt b,.total{font-variant-numeric:tabular-nums}
+#v-home{counter-reset:s}
+#v-home section{counter-increment:s;position:relative}
+#v-home section>h2::before{content:"0" counter(s);display:block;color:var(--gold-text);font:700 12px/1 system-ui,sans-serif;letter-spacing:.32em;margin-bottom:10px}
+#v-home section::before{content:"";position:absolute;left:0;right:0;top:26px;height:1px;background:linear-gradient(90deg,transparent,#3a3a42 25%,#3a3a42 75%,transparent)}
+.btn:not(.ghost){position:relative;overflow:hidden}
+.btn:not(.ghost)::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.38) 50%,transparent 70%);transform:translateX(-130%);transition:transform .8s ease;pointer-events:none}
+.btn:not(.ghost):hover::after{transform:translateX(130%)}
+.fx{position:relative}
+.fx::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:radial-gradient(240px circle at var(--mx,50%) var(--my,-60%),rgba(255,77,94,.17),transparent 70%);opacity:0;transition:opacity .3s}
+.fx:hover::after{opacity:1}
+.cer{border:1.5px solid transparent;background:linear-gradient(155deg,rgba(224,27,50,.2),transparent 55%) padding-box,linear-gradient(var(--surface),var(--surface)) padding-box,conic-gradient(from var(--a),rgba(224,27,50,.18),#ff4d5e 12%,rgba(224,27,50,.18) 32%) border-box}
+.gl{opacity:0;stroke-dasharray:14 86}
+.prog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#a30c22,#ff4d5e);z-index:50;box-shadow:0 0 12px rgba(255,77,94,.7);pointer-events:none}
+footer{text-align:center;border-top:1px solid var(--line);margin-top:56px}
+footer b{letter-spacing:.22em;text-transform:uppercase;font-size:17px}
+@media (prefers-reduced-motion:no-preference){
+  .cer{animation:spin 7s linear infinite}
+  .gl{opacity:.95;animation:glint 3.4s ease-in-out infinite}
+  .gl+.gl{animation-delay:1.5s}
+}
+/* ===== mobile-first polish ===== */
+section{scroll-margin-top:70px}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  header{padding-top:14px}
+  .call{padding:7px 12px;font-size:14px}
+  .eyebrow{margin-top:26px}
+  .lead{font-size:17px}
+  .btns{display:grid;grid-template-columns:1.4fr 1fr}
+  .btns .btn{text-align:center;padding:16px 10px}
+  .chips{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;margin:18px -16px 0;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .chips a{padding:10px 16px;font-size:15px}
+  .facts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:16px -16px 0;padding:0 16px 4px;scrollbar-width:none}
+  .facts div{flex:0 0 76%;scroll-snap-align:start}
+  section{padding-top:40px}
+  h2{font-size:26px}
+  .cer{padding:18px 14px}
+  .bar{gap:10px;padding-top:12px}
+  .bar .btn{padding:15px 10px;font-size:16px}
+  .bar .btn:last-child{flex:1.5}
+  input,select,textarea{min-height:48px;padding:13px 12px}
+  textarea{min-height:96px}
+  label.opt{padding:17px 14px}
+  #sms,#copy{width:100%;text-align:center}
+}
+@media (hover:none){.cer{animation:none}}
+</style>
+<script>document.documentElement.className+=" js"</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0b0b0d">
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<div class="wrap">
+  <svg class="bgcar" aria-hidden="true" viewBox="0 0 800 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--car)" stop-opacity=".95"/><stop offset="1" style="stop-color:var(--car)" stop-opacity=".3"/></linearGradient>
+      <g id="cw"><circle r="44" style="fill:var(--surface);stroke:var(--car)" stroke-width="2"/><circle r="31" style="stroke:var(--car)" stroke-width="3"/><circle r="8" style="fill:var(--car)"/><path d="M0-30V30M-30 0H30M-21-21L21 21M21-21L-21 21" style="stroke:var(--car)" stroke-width="2"/></g>
+    </defs>
+    <ellipse cx="400" cy="236" rx="370" ry="9" style="fill:var(--car)" opacity=".28"/>
+    <path fill-rule="evenodd" fill="url(#cg)" d="M36 190C26 166 34 148 62 142L190 124C240 98 290 70 380 62C470 56 540 66 590 98L690 124C740 132 770 146 774 172L772 190L672 190A52 52 0 0 0 568 190L232 190A52 52 0 0 0 128 190ZM236 120C274 95 322 80 386 76C456 72 512 83 554 108L236 120Z"/>
+    <path d="M200 118C250 92 300 68 380 60C470 54 540 64 590 96" style="stroke:var(--car)" stroke-width="2" stroke-opacity=".7"/>
+    <path d="M62 152C220 142 440 134 712 142" style="stroke:var(--car)" stroke-width="2" stroke-opacity=".55"/>
+    <path d="M722 138C748 140 765 148 769 160L728 152Z" fill="#fff" fill-opacity=".85" style="stroke:var(--car)" stroke-width="1.5"/>
+    <path d="M38 152L60 147L54 158Z" fill="#e4572e" fill-opacity=".9"/>
+    <path class="gl" pathLength="100" d="M200 118C250 92 300 68 380 60C470 54 540 64 590 96" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <path class="gl" pathLength="100" d="M62 152C220 142 440 134 712 142" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <use href="#cw" x="180" y="190"/><use href="#cw" x="620" y="190"/>
+  </svg>
+  <header>
+    <a class="logo" href="#" style="text-decoration:none;color:inherit;display:block">VIP <span>CAR CARE</span></a>
+    <a class="call" href="tel:85141166">8514 1166</a>
+  </header>
+
+  <main>
+    <div id="v-home">
+    <div class="eyebrow">Угаалга · Керамик · Тос</div>
+    <h1>VIP Car Care</h1>
+    <p class="lead">Таны автомашины гоо сайхан, хамгаалалт, найдвартай байдал.</p>
+    <div class="btns">
+      <a class="btn" href="#order">Цаг захиалах</a>
+      <a class="btn ghost" href="tel:85141166">Залгах</a>
+    </div>
+    <nav class="chips" aria-label="Хэсгүүд">
+      <a href="#wash">Угаалга</a><a href="#ceramic">Керамик</a><a href="#oil">Тос, масло</a><a href="#more">Бусад</a><a href="#calc">Үнэ тооцоолох</a><a href="#faq">Асуулт</a>
+    </nav>
+    <div class="facts">
+      <div><b>Цаг захиалгаар</b><span>Сайтаар эсвэл утсаар захиална</span></div>
+      <div><b>Тодорхой үнэ</b><span>Ангилал бүрийн үнэ доор бий</span></div>
+      <div><b>Утсаар баталгаажна</b><span>Эцсийн үнийг залгаж батална</span></div>
+    </div>
+
+    <section id="wash">
+      <h2>Машин угаалга</h2>
+      <p class="note">Машин бохирдлоос хамаарч 5,000–10,000₮ нэмэгдэнэ.</p>
+      <div class="cer">
+        <ul class="perks"><li>Гүн гялалзсан өнгө</li><li>Будгийг хамгаална</li><li>Угаахад хялбар</li></ul>
+        <div class="tiers">
+          <div class="tier"><span>Суудлын</span><b>110,000₮</b></div>
+          <div class="tier"><span>Дунд оврын</span><b>130,000₮</b></div>
+          <div class="tier"><span>Том оврын</span><b>150,000₮</b></div>
+        </div>
+      </div>
+      <ul class="list" style="margin-top:16px">
+        <li><span class="n">Ачааны тэрэг, бүтэн угаалга</span><span class="p">50,000–100,000₮</span></li>
+        <li><span class="n">Мотор угаах</span><span class="p">30,000–50,000₮</span></li>
+        <li><span class="n">Мотор шүрших</span><span class="p">5,000–10,000₮</span></li>
+      </ul>
+    </section>
+
+    <section id="ceramic">
+      <h2>Керамик өнгөлгөө</h2>
+      <p class="note">Будгийг гялалзуулж, урт хугацаанд хамгаална.</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Үйлчилгээ</th><th>Суудлын</th><th>Дунд оврын</th><th>Том оврын</th></tr></thead>
+        <tbody><tr><td>Керамик өнгөлгөө</td><td>110,000₮</td><td>130,000₮</td><td>150,000₮</td></tr></tbody>
+      </table></div>
+    </section>
+
+    <section id="oil">
+      <h2>Тос, масло солих</h2>
+      <p class="note">Ажлын хөлс 20,000₮.</p>
+      <ul class="list">
+        <li><span class="n">Toyota SP 0W-20 Synthetic<small>Toyota Full Synthetic</small></span><span class="p">4Л 110,000₮<small>1Л 27,500₮</small></span></li>
+        <li><span class="n">5W-30 KIXX</span><span class="p">4Л 80,000₮<small>1Л 21,000₮</small></span></li>
+        <li><span class="n">Antifreeze G12</span><span class="p">5Л 35,000₮<small>1Л 7,500₮</small></span></li>
+        <li><span class="n">Шүүр</span><span class="p">10,000₮</span></li>
+      </ul>
+    </section>
+
+    <section id="more">
+      <h2>Бусад үйлчилгээ</h2>
+      <p class="note">Үнийг утсаар тохирно.</p>
+      <ul class="list">
+        <li><span class="n">Шилний тэнь наах</span></li>
+        <li><span class="n">Хамгаалалтын хуулга</span></li>
+        <li><span class="n">Машины доторлоо</span></li>
+        <li><span class="n">Авто стикер, хулдаасан хэвлэл</span></li>
+        <li><span class="n">Хуулга зүсэлт</span></li>
+        <li><span class="n">Уран бичвэр (каллиграфи)</span></li>
+        <li><span class="n">Тэвшний дугаар</span><span class="p">45,000–55,000₮</span></li>
+      </ul>
+    </section>
+
+    <section id="calc">
+      <h2>Үнэ тооцоолох</h2>
+      <p class="note">Машины ангилалаа сонгоод, хэрэгтэй үйлчилгээгээ тэмдэглээрэй.</p>
+      <label>Машины ангилал<select id="cs"></select></label>
+      <div class="scroll" style="margin-top:14px">
+        <div id="cl"></div>
+        <div class="total"><span>Урьдчилсан үнэ</span><span id="ct">0₮</span></div>
+      </div>
+      <p class="note" style="margin-top:12px">Тосны үйлчилгээнд ажлын хөлс 20,000₮ автоматаар нэмэгдэнэ. Машин бохирдлоос хамаарч 5,000–10,000₮ нэмэгдэж болно. Эцсийн үнийг утсаар батална.</p>
+      <button class="btn" type="button" id="cbtn" disabled>Энэ үнээр захиалах</button>
+    </section>
+
+    <section id="faq">
+      <h2>Түгээмэл асуулт</h2>
+      <details><summary>Үнэ яаж тодорхойлогддог вэ?</summary><p>Машины ангилал болон үйлчилгээнээс хамаарна. Машин маш бохир бол 5,000–10,000₮ нэмэгдэнэ. Эцсийн үнийг утсаар батална.</p></details>
+      <details><summary>Цагаа яаж захиалах вэ?</summary><p>“Цаг захиалах” хэсгийг бөглөөд SMS-ээр илгээнэ, эсвэл 8514 1166 дугаарт залгана.</p></details>
+      <details><summary>Тос солиход ажлын хөлс тусдаа юу?</summary><p>Тийм. Тос, шүүрийн үнэ дээр ажлын хөлс 20,000₮ нэмэгдэнэ. Үнэ тооцоолуур үүнийг автоматаар нэмдэг.</p></details>
+      <details><summary>Шилний тэнь, хуулга, стикерийн үнэ хэд вэ?</summary><p>Эдгээрийн үнийг ажлын хэмжээнээс нь хамааруулан утсаар тохирно.</p></details>
+    </section>
+    </div>
+
+    <div id="v-order" hidden>
+      <a class="back" href="#">← Нүүр хуудас руу буцах</a>
+      <section id="order">
+        <h2>Цаг захиалах</h2>
+        <p class="note">Мэдээллээ бөглөөд “Захиалга илгээх” товчийг дарна уу. Бид тантай утсаар холбогдоно.</p>
+        <form id="f">
+        <div class="row">
+          <label>Нэр<input name="name" autocomplete="name" required autocomplete="name"></label>
+          <label>Утасны дугаар<input name="phone" inputmode="tel" autocomplete="tel" type="tel" inputmode="tel" required autocomplete="tel"></label>
+        </div>
+        <div class="row">
+          <label>Машины марк, загвар<input name="car" placeholder="Жишээ: Toyota Prius 30" required></label>
+          <label>Машины ангилал
+            <select name="size">
+              <option>Суудлын</option><option>Дунд оврын</option><option>Том оврын</option><option>Alphard, Thundra</option><option>Ачааны</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label>Үйлчилгээ
+            <select name="service" required>
+              <option value="">Сонгох</option>
+              <option>Бүтэн угаалга</option><option>Дотор угаалга</option><option>Гадна угаалга</option><option>Мотор угаах</option>
+              <option>Керамик өнгөлгөө</option><option>Тос, масло солих</option><option>Шилний тэнь наах</option><option>Хамгаалалтын хуулга</option>
+              <option>Стикер, хулдаасан хэвлэл</option><option>Хуулга зүсэлт</option><option>Уран бичвэр</option><option>Тэвшний дугаар</option><option>Бусад</option>
+            </select>
+          </label>
+          <label>Хүссэн өдөр, цаг<span style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><input name="date" type="date"><input name="time" type="time"></span></label>
+        </div>
+        <label>Нэмэлт тайлбар<textarea name="note" rows="3"></textarea></label>
+        <button class="btn" type="submit">Захиалга илгээх</button>
+      </form>
+      </section>
+    </div>
+
+    <div id="v-success" hidden>
+      <div id="done">
+        <div class="tick">✓</div>
+        <h2 id="okT" style="margin:0">Захиалга бэлэн боллоо</h2>
+        <ul class="steps" id="steps">
+          <li>✓ Мэдээллээ бөглөсөн</li>
+          <li><b>Одоо:</b> доорх товчийг дарж SMS-ээ илгээнэ. Апп дээрээ “илгээх” товчийг дарна уу.</li>
+          <li>Дараа нь: бид тантай утсаар холбогдож цагийг баталгаажуулна.</li>
+        </ul>
+        <pre id="out"></pre>
+        <div class="btns">
+          <a class="btn" id="sms" href="sms:85141166">SMS-ээр илгээх</a>
+          <button class="btn ghost" type="button" id="copy">Хуулах</button>
+          <a class="btn ghost" href="tel:85141166">Залгах</a>
+        </div>
+        <p style="margin:16px 0 0"><a class="back" href="#" style="margin:0">← Нүүр хуудас руу буцах</a></p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p><b>VIP Car Care</b></p>
+    <p>Утас: <a href="tel:85141166" style="color:inherit">8514 1166</a></p>
+  </footer>
+  <nav class="bar" aria-label="Түргэн холбоос"><a class="btn ghost" href="tel:85141166">Залгах</a><a class="btn" href="#order">Цаг захиалах</a></nav>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+<script>
+(function(){
+  /* ===== EmailJS тохиргоо: emailjs.com дээрээс авсан утгуудаа энд хийнэ ===== */
+  var CFG={publicKey:'',serviceId:'',templateId:''};
+  /* ======================================================================== */
+  document.documentElement.classList.add('js');
+  (function(){
+    var pr=document.getElementById('prog'),t=0,d=document.documentElement;
+    function up(){t=0;pr.style.transform='scaleX('+Math.min(1,d.scrollTop/((d.scrollHeight-d.clientHeight)||1))+')'}
+    addEventListener('scroll',function(){if(!t)t=requestAnimationFrame(up)},{passive:true});up();
+    [].forEach.call(document.querySelectorAll('.facts div,.tier,.cer,.scroll,form'),function(el){el.classList.add('fx')});
+    document.addEventListener('pointermove',function(e){var f=e.target.closest&&e.target.closest('.fx');if(!f)return;var r=f.getBoundingClientRect();f.style.setProperty('--mx',(e.clientX-r.left)+'px');f.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+  })();
+  (function(){
+    var els=[].slice.call(document.querySelectorAll('#v-home section, .tier, .list li, details, .facts div'));
+    els.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=((i%5)*80)+'ms'});
+    els.forEach(function(el,i){el.dataset.d=(i%5)*80});
+    function on(el){el.style.transitionDelay=el.dataset.d+'ms';el.classList.add('in');setTimeout(function(){el.style.transitionDelay='0ms'},1200)}
+    function off(el){el.style.transitionDelay='0ms';el.classList.remove('in')}
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){on(x.target);io.unobserve(x.target)}})},{threshold:0,rootMargin:'0px 0px -6% 0px'});
+      els.forEach(function(el){io.observe(el)});
+    }else els.forEach(on);
+    var ct=document.getElementById('ct'),rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+    if(ct&&ct.animate&&!rm&&'MutationObserver' in window)new MutationObserver(function(){ct.animate([{transform:'scale(1)'},{transform:'scale(1.12)'},{transform:'scale(1)'}],{duration:260,easing:'ease-out'})}).observe(ct,{childList:true,characterData:true,subtree:true});
+  })();
+  var vh=document.getElementById('v-home'),vo=document.getElementById('v-order'),vs=document.getElementById('v-success'),sent=false;
+  function route(){
+    var h=location.hash,v='home';
+    if(h==='#order')v='order';else if(h==='#success')v=sent?'success':'order';
+    vh.hidden=v!=='home';vo.hidden=v!=='order';vs.hidden=v!=='success';
+    document.body.classList.toggle('sub',v!=='home');
+    var el=v==='home'&&h.length>1?document.getElementById(h.slice(1)):null;
+    if(el)el.scrollIntoView();else window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',route);
+  var SMS_STEPS='<li>✓ Мэдээллээ бөглөсөн</li><li><b>Одоо:</b> доорх товчийг дарж SMS-ээ илгээнэ. Апп дээрээ “илгээх” товчийг дарна уу.</li><li>Дараа нь: бид тантай утсаар холбогдож цагийг баталгаажуулна.</li>';
+  function mode(ok){
+    document.getElementById('okT').textContent=ok?'Захиалга амжилттай илгээгдлээ':'Захиалга бэлэн боллоо';
+    var warn=(!ok&&CFG.publicKey)?'<li>⚠ Имэйлээр илгээж чадсангүй. Доорх товчоор SMS илгээнэ үү.</li>':'';
+    document.getElementById('steps').innerHTML=ok?'<li>✓ Мэдээллээ бөглөсөн</li><li>✓ Захиалга манайд хүрлээ</li><li>Дараа нь: бид тантай утсаар холбогдож цагийг баталгаажуулна.</li>':warn+SMS_STEPS;
+    sms.style.display=btn.style.display=ok?'none':'';
+  }
+  var f=document.getElementById('f'),out=document.getElementById('out'),btn=document.getElementById('copy'),sms=document.getElementById('sms');
+  route();
+  try{var t=new Date();f.elements['date'].min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2)}catch(x){}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var lines=['Захиалга','Нэр: '+d.get('name'),'Утас: '+d.get('phone'),'Машин: '+d.get('car')+' ('+d.get('size')+')','Үйлчилгээ: '+d.get('service')];
+    var dt=((d.get('date')||'')+' '+(d.get('time')||'')).trim();if(dt)lines.push('Өдөр: '+dt);
+    if(d.get('note'))lines.push('Тайлбар: '+d.get('note'));
+    out.textContent=lines.join('\n');
+    sms.href='sms:85141166?&body='+encodeURIComponent(out.textContent);
+    var P={name:d.get('name'),phone:d.get('phone'),car:d.get('car')+' ('+d.get('size')+')',service:d.get('service'),datetime:dt||'-',note:d.get('note')||'-',message:out.textContent};
+    f.reset();btn.textContent='Хуулах';
+    var sb=f.querySelector('button[type=submit]');
+    function fin(ok){sent=true;mode(ok);sb.disabled=false;sb.textContent='Захиалга илгээх';location.hash='#success'}
+    if(CFG.publicKey&&window.emailjs){
+      sb.disabled=true;sb.textContent='Илгээж байна…';
+      emailjs.send(CFG.serviceId,CFG.templateId,P,{publicKey:CFG.publicKey}).then(function(){fin(true)},function(){fin(false)});
+    }else fin(false);
+  });
+  btn.addEventListener('click',function(){
+    function sel(){
+      try{var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Сонгосон'}catch(x){}
+    }
+    try{
+      navigator.clipboard.writeText(out.textContent).then(function(){btn.textContent='Хуулсан'},sel);
+    }catch(err){sel()}
+  });
+var CL=['Суудлын','Дунд оврын','Том оврын','Alphard, Thundra','Ачааны'],
+  A=function(a){return [a,a,a,a,a]},
+  IT=[
+  {n:'Бүтэн угаалга',o:'Бүтэн угаалга',p:[[40000],[50000],[60000],[70000],[50000,100000]]},
+  {n:'Дотор угаалга',o:'Дотор угаалга',p:[[30000],[35000],[40000],[45000],0]},
+  {n:'Гадна угаалга',o:'Гадна угаалга',p:[[25000],[30000],[35000],[40000],0]},
+  {n:'Керамик өнгөлгөө',o:'Керамик өнгөлгөө',p:[[110000],[130000],[150000],0,0]},
+  {n:'Мотор угаах',o:'Мотор угаах',p:A([30000,50000])},
+  {n:'Мотор шүрших',o:'Бусад',p:A([5000,10000])},
+  {n:'Тос: Toyota SP 0W-20, 4Л',o:'Тос, масло солих',oil:1,p:A([110000])},
+  {n:'Тос: 5W-30 KIXX, 4Л',o:'Тос, масло солих',oil:1,p:A([80000])},
+  {n:'Antifreeze G12, 5Л',o:'Тос, масло солих',oil:1,p:A([35000])},
+  {n:'Шүүр',o:'Тос, масло солих',oil:1,p:A([10000])}
+  ],
+  LAB=20000,sel={},
+  cs=document.getElementById('cs'),cl=document.getElementById('cl'),ct=document.getElementById('ct'),cb=document.getElementById('cbtn');
+  function fm(n){return n.toLocaleString('en-US')+'₮'}
+  CL.forEach(function(c,i){var o=document.createElement('option');o.textContent=c;o.value=i;cs.appendChild(o)});
+  function calc(){
+    var k=+cs.value,lo=0,hi=0,names=[],oil=false;
+    IT.forEach(function(it,j){var p=it.p[k];if(sel[j]&&p){lo+=p[0];hi+=p[p.length>1?1:0];names.push(it.n);if(it.oil)oil=true}});
+    if(oil){lo+=LAB;hi+=LAB;names.push('Ажлын хөлс')}
+    ct.textContent=names.length?(lo===hi?fm(lo):lo.toLocaleString('en-US')+'–'+fm(hi)):'0₮';
+    cb.disabled=!names.length;
+    return {names:names,k:k};
+  }
+  function draw(){
+    var k=+cs.value;cl.textContent='';
+    IT.forEach(function(it,j){
+      var p=it.p[k],l=document.createElement('label');l.className='opt'+(sel[j]&&p?' on':'');
+      var c=document.createElement('input');c.type='checkbox';c.dataset.j=j;c.disabled=!p;c.checked=!!(sel[j]&&p);
+      var s=document.createElement('span');s.style.flex='1';s.textContent=it.n;
+      var m=document.createElement('b');
+      m.textContent=p?(p.length>1?p[0].toLocaleString('en-US')+'–'+fm(p[1]):fm(p[0])):'утсаар';
+      l.appendChild(c);l.appendChild(s);l.appendChild(m);cl.appendChild(l);
+    });
+    calc();
+  }
+  cl.addEventListener('change',function(e){var j=e.target.dataset.j;if(j!==undefined){sel[j]=e.target.checked;e.target.parentNode.classList.toggle('on',e.target.checked);calc()}});
+  cs.addEventListener('change',draw);
+  cb.addEventListener('click',function(){
+    var r=calc();if(!r.names.length)return;
+    var ff=document.getElementById('f');
+    var first=IT.filter(function(it,j){return sel[j]&&it.p[r.k]})[0];
+    ff.elements['size'].value=CL[r.k];
+    ff.elements['service'].value=first.o;
+    ff.elements['note'].value='Сонгосон: '+r.names.join(', ')+'. Урьдчилсан үнэ: '+ct.textContent;
+    location.hash='#order';
+  });
+  draw();
+})();
+</script>
+</body>
+</html>
